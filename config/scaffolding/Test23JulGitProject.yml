@@ -8,7 +8,21 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+services:
+- serviceName: project.test23julgit.integrations:Call_refData
+  packages:
+  - name: Test23JulGitProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: project.test23julgit.referencedata:refData
+  packages:
+  - name: Test23JulGitProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
